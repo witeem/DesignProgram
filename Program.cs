@@ -18,9 +18,9 @@ class MyClass
 
         Console.WriteLine();
         Console.WriteLine("工厂方法模式");
-        ICarFactory carFactory = new SportCarFactory();
+        ICarFactory carFactory = FactoryProvider.Instance(nameof(SportCarFactory));
         carFactory.CreateCar();
-        carFactory = new JeepCarFactory();
+        carFactory = FactoryProvider.Instance(nameof(JeepCarFactory));
         carFactory.CreateCar();
     }
 }

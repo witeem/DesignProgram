@@ -3,8 +3,6 @@ public sealed class SignleClass
     public string Name { get; set; }
     private static SignleClass mySignle;
     private static object Flag = new object();
-
-    private SignleClass() { }
     public static SignleClass GetSignle
     {
         get
